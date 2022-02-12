@@ -8,6 +8,9 @@ docker build -t bcserver .
 ### run
 ```bash
 docker run --rm -ti -p 127.0.0.1:9000:9000/tcp --name bcserver bcserver
+
+# or
+docker run -ti -p 0.0.0.0:9000:9000/tcp --name bcserver -d --restart=always bcserver
 ```
 
 ### use
